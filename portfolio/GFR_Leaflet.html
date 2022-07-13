@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>General Fertility Rate Map</title>
+<title>General Fertility Rate Leaflet Map</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
    crossorigin=""/>
-<link rel="stylesheet" href = "style/style.css">
+<link rel="stylesheet" href = "../style/style.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
 <!-- Search Plugin -->
-<link rel="stylesheet" href="style/leaflet-search.css" />
-<style>
-</style>
- <!-- Make sure you put this AFTER Leaflet's CSS -->
- <body>
+<link rel="stylesheet" href="../style/leaflet-search.css" />
+<body>
+    <nav class="navbar navbar-expand-lg navbar-default">
+        <!-- Create the navbar -->
+        <div class="container">
+            <div class="navbar">
+                <!-- Creates the navbar header -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+                    <span class="menu"> Menu</span>
+                </button> <!-- Hamburger button for smaller devices -->
+                <h4>Alex Gomez</h4> <!-- Your website brand name -->
+            </div>
 
-<div class="">
- <h1>General Fertility Rate in California 2014-2020</h1>
- <p>The general fertility rate  (GFR) is the number of live births per 1,000 females of childbearing age
+            <div id="navbar-header" class="collapse navbar-collapse">
+                <!-- Links to include in navbar -->
+                <ul class="nav navbar-nav">
+                    <!-- Unordered list for links on navbar -->
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../index.html">Portfolio</a></li>
+                    <li><a href="../resume.html">Resume</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div> <!-- end .navbar-collapse -->
+        </div> <!-- end .container -->
+    </nav> <!-- end navigation bar -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                <h2 class="portfolio-title">General Fertility Map 2014 - 2020</h2>
+                <p class="portfolio-description">
+ The general fertility rate  (GFR) is the number of live births per 1,000 females of childbearing age
 between the ages of 15-50 years. The U.S. birth rate has been declining since the 1970's due to social factors such as delayed marriage, widespread contraceptive use, and changes in abortion laws.
-In 2020, the U.S. GFR has dropped to 55.8 births per 1,000 women, down 4% from 2019 - a new record low. </p>
- <p>The map below displays the GFR in California cities from 2014 - 2020. The data can be view by age groups or total GFR. Additionally, the search button in the top-left corner can zoom the map to the selected city.</p>
-</div>
+In 2020, the U.S. GFR has dropped to 55.8 births per 1,000 women, down 4% from 2019 - a new record low.
 
-</body>
+ The map below displays the GFR in California cities from 2014 - 2020. The data can be view by age groups or total GFR. Additionally, the search button in the top-left corner can zoom the map to the selected city.
+              </p>
+            </div>
+        </div>
+        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 portfolio-image">
  <div id="map"></div>
-<p>The data shown in this map was obtained from the U.S. Census Bureau Table S1301 | Fertility for 2014-2020 ACS 5-Year-Estimates.</p>
+The data shown in this map was obtained from the U.S. Census Bureau Table S1301 | Fertility for 2014-2020 ACS 5-Year-Estimates.
+</div>
+</div>
+</div>
  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script>
-<script src="js/jquery.js"></script>
-<script src = "js/leaflet-search.js"></script>
-<script src = "js/GFR_Prop_Map.js"></script>
-
+<script src="../js/jquery.js"></script>
+<script src = "../js/leaflet-search.js"></script>
+<script src = "../js/GFR_Prop_Map.js"></script>
+</body>
 </html>
