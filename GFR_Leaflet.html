@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>General Fertility Rate Map</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+<link rel="stylesheet" href = "style/style.css">
+<!-- Search Plugin -->
+<link rel="stylesheet" href="style/leaflet-search.css" />
+<style>
+</style>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <body>
+
+<div class="">
+ <h1>General Fertility Rate in California 2014-2020</h1>
+ <p>The general fertility rate  (GFR) is the number of live births per 1,000 females of childbearing age
+between the ages of 15-50 years. The U.S. birth rate has been declining since the 1970's due to social factors such as delayed marriage, widespread contraceptive use, and changes in abortion laws.
+In 2020, the U.S. GFR has dropped to 55.8 births per 1,000 women, down 4% from 2019 - a new record low. </p>
+ <p>The map below displays the GFR in California cities from 2014 - 2020. The data can be view by age groups or total GFR. Additionally, the search button in the top-left corner can zoom the map to the selected city.</p>
+</div>
+
+</body>
+ <div id="map"></div>
+<p>The data shown in this map was obtained from the U.S. Census Bureau Table S1301 | Fertility for 2014-2020 ACS 5-Year-Estimates.</p>
+ <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+<script src="js/jquery.js"></script>
+<script src = "js/leaflet-search.js"></script>
+<script src = "js/GFR_Prop_Map.js"></script>
+
+</html>

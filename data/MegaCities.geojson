@@ -1,0 +1,17 @@
+{
+    "type": "Feature",
+    "properties": {
+        "City": "Tokyo",
+        "Pop_1985": 30.30,
+        "Pop_1990": 32.53,
+        "Pop_1995": 33.59,
+        "Pop_2000": 34.45,
+        "Pop_2005": 35.62,
+        "Pop_2010": 36.83,
+        "Pop_2015": 38
+    },
+    "geometry":{
+        "type": "Point",
+        "coordinates": [139.8089447, 35.6832085]
+    }
+}

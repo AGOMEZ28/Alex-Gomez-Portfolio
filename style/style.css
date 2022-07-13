@@ -1,0 +1,51 @@
+.sequence-control-container {
+    width: 350px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+.temporal-legend {
+    width: 200px;
+}
+
+.legend-control-container {
+    width: 250px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+.range-slider {
+    width: 200px;
+    max: 6;
+    min: 0;
+    value: 0;
+    step: 1;
+
+}
+
+
+.radio {
+    background-color: #F47821;
+    color: white;
+}
+
+#radio0:checked {
+    background-color: orange;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    display: inline-block;
+}
+.leaflet-popup-content p {
+    margin: 0.2em 0;
+}
