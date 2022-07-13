@@ -202,7 +202,6 @@ function calcPropRadius(attValue) {
     //if (attValue > 0) {
     if (attValue == 0) {
     	return 0;
-    	console.log("zero value");
     }
     else {
     var area = attValue * scaleFactor;
