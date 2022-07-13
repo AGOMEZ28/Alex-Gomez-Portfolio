@@ -267,19 +267,19 @@ function createPopup(properties, attribute, layer, radius){
     //popupContent += "<p><b>Place Type: </b>" + properties.TYPE;
     if (att == 0) { 
     var popupContent = "<p><b><u>Total GFR</u> </b><br>"
-     popupContent += "<b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " per 1000 woman</p>";
+     popupContent += "<b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " births per 1000 woman</p>";
     }
     else if (att == 1) {
         var popupContent = "<p><b><u>Age Group 15 - 19</u> </b><br>"
-    popupContent += "<p><b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " per 1000 woman</p>";
+    popupContent += "<p><b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " births per 1000 woman</p>";
     }
         else if (att == 2) {
         var popupContent = "<p><b><u>Age Group 20 - 34</u> </b><br>"
-    popupContent += "<p><b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " per 1000 woman</p>";
+    popupContent += "<p><b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " births per 1000 woman</p>";
     }
         else if (att == 3) {
         var popupContent = "<p><b><u>Age Group 35 - 50</u> </b><br>"
-    popupContent += "<p><b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " per 1000 woman</p>";
+    popupContent += "<p><b>General Fertility Rate in " + year + ":</b> " + String(properties[attribute]) + " births per 1000 woman</p>";
     }
     
        //add city to popup content string
