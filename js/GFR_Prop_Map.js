@@ -51,7 +51,7 @@ function createSearchLayer(data,map,attributes){
 //function to retrieve the data and place it on the map
 function getData(map){
     //load the data
-    $.ajax("data/GFR_14_20.json", {
+    $.ajax("../data/GFR_14_20.json", {
         dataType: "json",
         success: function(response){
             var attributes = processData(response);
