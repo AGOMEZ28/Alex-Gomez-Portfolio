@@ -351,7 +351,7 @@ function updateChart(bars, n, colorScale){
     
     //add text to chart title
     var chartTitle = d3.select(".chartTitle")
-	        .text(expressed + " in each State (per 100 million VMT)");
+	        .text(expressed + " (per 100 million VMT)");
 };
 
 //function to highlight enumeration units and bars
