@@ -276,7 +276,7 @@ function setChart(csvData, colorScale){
 function createDropdown(csvData){
     //add select element
     var dropdown = d3.selectAll("dropdown")
-        .append("select")
+        .append("select").attr('class', 'legendEntry')
         //.attr("class", "dropdown")
         .on("change", function(){
             changeAttribute(this.value, csvData)
