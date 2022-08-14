@@ -275,7 +275,7 @@ function setChart(csvData, colorScale){
 //Example 1.1 line 1...function to create a dropdown menu for attribute selection
 function createDropdown(csvData){
     //add select element
-    var dropdown = d3.select(".container-fluid")
+    var dropdown = d3.select(".map")
         .append("select")
         .attr("class", "dropdown")
         .on("change", function(){
