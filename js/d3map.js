@@ -253,7 +253,7 @@ function setChart(csvData, colorScale){
 
     //create a text element for the chart title
     var chartTitle = chart.append("text")
-        .attr("x", 80)
+        .attr("x", 40)
         .attr("y", 40)
         .attr("class", "chartTitle")
         .text("Number of  " + expressed + " in each State");
