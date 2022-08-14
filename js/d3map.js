@@ -398,7 +398,7 @@ function setLabel(props){
         "</h1><b>" + expressed + "</b>";
 
     //create info label div
-    var infolabel = d3.select(".map")
+    var infolabel = d3.select("body")
         .append("div")
         .attr("class", "infolabel")
         .attr("id", props.NAME + "_label") 
