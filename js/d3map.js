@@ -275,7 +275,7 @@ function setChart(csvData, colorScale){
 //Example 1.1 line 1...function to create a dropdown menu for attribute selection
 function createDropdown(csvData){
     //add select element
-    var dropdown = d3.select("#container-fluid")
+    var dropdown = d3.select(".container-fluid")
         .append("select")
         .attr("class", "dropdown")
         .on("change", function(){
@@ -398,7 +398,7 @@ function setLabel(props){
         "</h1><b>" + expressed + "</b>";
 
     //create info label div
-    var infolabel = d3.select("#container-fluid")
+    var infolabel = d3.select(".container-fluid")
         .append("div")
         .attr("class", "infolabel")
         .attr("id", props.NAME + "_label") 
