@@ -40,7 +40,7 @@ function setMap(){
         .attr("height", height);
 
     //create Albers equal area conic projection centered on USA
-	var projection = d3.geoAlbersUsa().scale((width * height) / 2 ).translate([width/2, height/2])
+	var projection = d3.geoAlbersUsa().scale(width).translate([width/2, height/2])
     var path = d3.geoPath().projection(projection);
 
     //use Promise.all to parallelize asynchronous data loading
@@ -275,7 +275,7 @@ function setChart(csvData, colorScale){
 //Example 1.1 line 1...function to create a dropdown menu for attribute selection
 function createDropdown(csvData){
     //add select element
-    var dropdown = d3.select("#p")
+    var dropdown = d3.select(".map")
         .append("select")
         .attr("class", "dropdown")
         .on("change", function(){
@@ -398,7 +398,7 @@ function setLabel(props){
         "</h1><b>" + expressed + "</b>";
 
     //create info label div
-    var infolabel = d3.select(".container-fluid")
+    var infolabel = d3.select(".map")
         .append("div")
         .attr("class", "infolabel")
         .attr("id", props.NAME + "_label") 
