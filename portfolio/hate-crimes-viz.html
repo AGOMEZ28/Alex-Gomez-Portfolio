@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Hate Crimes in the United States 2015 - 2020</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+<link rel="stylesheet" href = "../style/style.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/fp_style.css">
+
+<!-- Search Plugin -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-default">
+        <!-- Create the navbar -->
+        <div class="container">
+            <div class="navbar">
+                <!-- Creates the navbar header -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+                    <span class="menu"> Menu</span>
+                </button> <!-- Hamburger button for smaller devices -->
+                <h4>Alex Gomez</h4> <!-- Your website brand name -->
+            </div>
+
+            <div id="navbar-header" class="collapse navbar-collapse">
+                <!-- Links to include in navbar -->
+                <ul class="nav navbar-nav">
+                    <!-- Unordered list for links on navbar -->
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../index.html">Portfolio</a></li>
+                    <li><a href="../resume.html">Resume</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div> <!-- end .navbar-collapse -->
+        </div> <!-- end .container -->
+    </nav> <!-- end navigation bar -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                <h2 class="portfolio-title">Hate Crimes By Bias From 2015 - 2020 in United States</h2>
+                <p class="portfolio-description">
+In 2019 there were 36,096 people killed in traffic crashes. The rate at which drivers experience fatal crashes varies across the states (and District of Columbia). Many factors can affect these rates, including types of vehicles driven, travel speeds, rates of licensure, state traffic laws, emergency care capabilities, weather and topography. The map and chart below displays the total fatal car crash rate per 100 million vehicle miles traveled (VMT) in each state. Additionally, the fatal car crashes can be viewed by the following types: motor vehicle collision, nonmotorist collision, fixed object collision, object not fixed collsion, and non-collision overturn. 
+  <em><br><br>The data shown in this map was obtained from the NHTSA Fatality Analysis Reporting System (FARS) & USDOT FHA Highway Statistics Series.</em>
+
+              </p>
+            </div>
+        </div>
+        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 portfolio-image">
+	<div class = "map2">
+		<!--libraries-->
+		<script type="text/javascript" src="../data/arrayData.js"></script>	
+		<script type="text/javascript" src="../lib/d3.js"></script>
+		<script type="text/javascript" src="../lib/d3-selection-multi.min.js"></script>
+		<script type="text/javascript" src="../lib/topojson.min.js"></script>
+		<script src="https://unpkg.com/d3-simple-slider@1.10.4/dist/d3-simple-slider.min.js"></script>
+		<script type="text/javascript" src="../lib/simple-statistics.min.js"></script>
+		<!--main script-->
+		<script type="text/javascript" src="../js/d3_hc_viz.js"></script>
+		<button class="btn"><a href="../data/HC_Data.csv" download>  <img src="../assets/dl_icon.png" alt="Download Hate Crime Data"></img></a></button>
+		</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
